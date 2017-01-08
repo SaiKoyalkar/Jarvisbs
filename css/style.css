@@ -1,6 +1,62 @@
+.main{
+  margin-top: -20px !important;
+}
+.anonymous-home-header{
+  background: url(../images/header-bg.png);
+  height: 500px;
+  margin-bottom: 150px;
+}
+.logo{
+  background: url(../images/logo.png);
+  width: 75px;
+  height: 82px;
+  margin-top: 50px;
+}
+.device-community{
+  margin-left: 20px;
+}
 
+.login-section{
+  margin-bottom: 50px;
+}
 
-.block{
+.login-section .login-btn{
+  color: #fff !important;
   border: 1px solid #ccc;
-  margin: 20px 0;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  background: rgba();
+}
+
+.login-section .register-btn{
+  color: #fff !important;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  background: rgba();
+}
+
+.about-dts, .about-ats{
+  position: absolute;
+  display: inline-block;
+  width: 500px;
+  padding: 50px;
+  background: #ccc;
+  margin-top: -75px;
+}
+
+.about-dts-products-img{
+  margin-right: 150px;
+}
+
+
+.about-ats-products-img{
+  margin-top: 75px;
+}
+
+.about-ats{
+  float: right;
+  right: 88px;
 }
