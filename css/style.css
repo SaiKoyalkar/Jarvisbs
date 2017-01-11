@@ -3,60 +3,92 @@
 }
 .anonymous-home-header{
   background: url(../images/header-bg.png);
-  height: 500px;
-  margin-bottom: 150px;
+  height: 585px;
+  margin-bottom: 130px;
+  text-align: center;
 }
+
 .logo{
   background: url(../images/logo.png);
   width: 75px;
   height: 82px;
   margin-top: 50px;
 }
+
 .device-community{
-  margin-left: 20px;
+  margin-top: 55px;
+  margin-left: 170px;
+  text-align: left;
+  color: #fff;
 }
 
 .login-section{
-  margin-bottom: 50px;
+  float: right;
+  right: 224px;
+  width: 270px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .login-section .login-btn{
+  width: 240px;
+  margin: 10px auto;
   color: #fff !important;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  padding: 20px;
+  border: 2px solid #bebcc4;
+  border-radius: 25px;
+  padding: 15px;
   text-align: center;
-  background: rgba();
+  background: rgba(149, 145, 150, 0.5);
 }
 
 .login-section .register-btn{
   color: #fff !important;
-  border: 1px solid #ccc;
+  margin: 10px auto;
+  border: 2px solid #bebcc4;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-  background: rgba();
+  width: 175px;
+  background: rgba(149, 145, 150, 0.5);
+}
+
+.login-section .forgot-btn{
+  color: #fff;
 }
 
 .about-dts, .about-ats{
   position: absolute;
   display: inline-block;
-  width: 500px;
-  padding: 50px;
-  background: #ccc;
-  margin-top: -75px;
+  width: 43%;
+  min-height: 400px;
+  padding: 85px;
+  background: #f7f7f7;
+  margin-top: -65px;
+}
+.color-pink{
+  color: #bd28b8;
 }
 
+.section-border{
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  margin: 50px auto;
+}
+
+
 .about-dts-products-img{
-  margin-right: 150px;
+  margin-right: 100px;
 }
 
 
 .about-ats-products-img{
-  margin-top: 75px;
+  margin-top: 65px;
 }
 
 .about-ats{
   float: right;
   right: 88px;
+}
+.right.carousel-control, .left.carousel-control {
+    display: none;
 }
