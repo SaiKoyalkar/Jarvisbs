@@ -1,108 +1,174 @@
-<section class="anonymous-home-header" id="board" ng-controller="home">
-   <header class="container"  id="anonymous-home-header">
-     <div class="logo">
-     </div>
-     <div class="device-community">
-       <h2 class="anonymous-h2">DEVICE COMMUNITY</h2>
-       <p class="anonymous-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-     </div>
-
-    <section class="login-section">
-      <button class="login-btn">LOGIN</button>
-      <button class="register-btn">REGISTER</button>
-      <button class="forgot-btn btn btn-link">forgot password</button>
+<div ng-controller="home">
+    <section class="anonymous-home-header" id="board">
+        <header class="container" id="anonymous-home-header">
+            <div class="logo">
+            </div>
+            <div class="device-community">
+                <h2 class="anonymous-h2">DEVICE COMMUNITY</h2>
+                <p class="anonymous-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </div>
+            <section class="login-section">
+                <button class="login-btn" ng-click="openLogin()">LOGIN</button>
+                <button class="register-btn" ng-click="openRegister()">REGISTER</button>
+                <button class="forgot-btn btn btn-link">forgot password</button>
+            </section>
+        </header>
     </section>
-   </header>
-</section>
-<section class="container">
-  <div class="row">
-  <div class="about-products pull-left about-dts">
-    <h2 class="color-pink">About DTS Products</h2>
-    <div class="desc">
-      Lorem Sai ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-    </div>
-  </div>
-  <div class="about-dts-products-img pull-right">
-    <img src="images/about-dts-products.png" />
-  </div>
-</div>
-
-<div class="about-products about-ats">
-<h2 class="color-pink">About ATS Products</h2>
-<div class="desc">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-</div>
-</div>
-
-
-<div class="about-ats-products-img">
-  <img src="images/eye-cream.png" />
-</div>
-</section>
-
-
-<section class="container section-border">
-  <div class="row">
-    <h2 class="center color-pink">BRANDS</h2>
-    <div class="col-md-3">
-      <img src="images/B1.png" />
-    </div>
-    <div class="col-md-3">
-      <img src="images/B2.png" />
-    </div>
-    <div class="col-md-3">
-      <img src="images/B3.png" />
-    </div>
-    <div class="col-md-3">
-      <img src="images/B4.png" />
-    </div>
-  </div>
-</section>
-<section class="container">
-<div class="row">
-  <div class="col-md-4">
-
-
-      <div style="height: 305px">
-        <div uib-carousel active="active" interval="5000" hide-arrows="true" hide-hideIndicators="true" no-wrap="false">
-          <div uib-slide index="0">
-            <img src="images/Untitled-7.png" style="margin:auto;">
-            <div class="carousel-caption">
+    <section class="container">
+        <div class="row">
+            <div class="about-products pull-left about-dts">
+                <h2 class="color-pink">About DTS Products</h2>
+                <div class="desc">
+                    Lorem Sai ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate
+                </div>
             </div>
-          </div>
-          <div uib-slide index="1">
-            <img src="images/Untitled-7.png" style="margin:auto;">
-            <div class="carousel-caption">
+            <div class="about-dts-products-img pull-right">
+                <img src="images/about-dts-products.png" />
             </div>
-          </div><div uib-slide index="2">
-            <img src="images/Untitled-7.png" style="margin:auto;">
-            <div class="carousel-caption">
-            </div>
-          </div>
         </div>
-      </div>
 
-  </div>
-  <div class="col-md-8">
-    <h2>Message from our founder</h2>
-    <div class="msg-founder">
-      <p>"We understand that ongoing training and support is vital ensure accurate  and up to date product knowledge. As part of our commitment to providing outstanding customer service, we have a dedicated staff, with skill ranging from sales, marketing and nursing to professional educators who will be available to train clinic as needed."</p>
-      <p>Trish Winchester</p>
-      <p> Company founder & MD</p>
+        <div class="about-products about-ats">
+            <h2 class="color-pink">About ATS Products</h2>
+            <div class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate
+            </div>
+        </div>
+
+
+        <div class="about-ats-products-img">
+            <img src="images/eye-cream.png" />
+        </div>
+    </section>
+
+
+    <section class="container section-border">
+        <div class="row">
+            <h2 class="center color-pink">BRANDS</h2>
+            <div class="col-md-3">
+                <img src="images/B1.png" />
+            </div>
+            <div class="col-md-3">
+                <img src="images/B2.png" />
+            </div>
+            <div class="col-md-3">
+                <img src="images/B3.png" />
+            </div>
+            <div class="col-md-3">
+                <img src="images/B4.png" />
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4 msg-founder">
+                <div uib-carousel active="active" interval="5000" hide-arrows="true" hide-hideIndicators="true" no-wrap="false">
+                    <div uib-slide index="0">
+                        <img src="images/Untitled-7.png" style="margin:auto;">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div uib-slide index="1">
+                        <img src="images/Untitled-7.png" style="margin:auto;">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div uib-slide index="2">
+                        <img src="images/Untitled-7.png" style="margin:auto;">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2>Message from our founder</h2>
+                <div class="msg-founder">
+                    <p>"We understand that ongoing training and support is vital ensure accurate and up to date product knowledge. As part of our commitment to providing outstanding customer service, we have a dedicated staff, with skill ranging from sales,
+                        marketing and nursing to professional educators who will be available to train clinic as needed."</p>
+                    <p><strong>Trish Winchester</strong></p>
+                    <p> Company founder & MD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/ng-template" id="registerContent.html">
+        <div class="modal-header center">
+          REGISTER
+        </div>
+        <div class="modal-body" id="modal-body">
+
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="yourName">FIRST NAME</label>
+                            <input type="text" class="form-control" id="firstName" ng-model="user.firstName">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="yourEmail">LAST NAME</label>
+                            <input type="email" class="form-control" id="lastName" ng-model="user.lastName">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Subject">EMAIL</label>
+                            <input type="text" class="form-control" id="email" ng-model="user.email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Message">EMPLOYEE ID</label>
+                            <input type="text" class="form-control" id="employeeId" ng-model="user.employeeId">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="col-md-12 center">
+                        <button class="btn" type="button" ng-click="ok()">SIGN UP</button>
+                    </div>
+                    <label>ALREADY HAVE AN ACCOUNT?
+                    <button class="btn btn-link" type="button" ng-click="cancel()">LOGIN</button>
+                </div>
+            </form>
+        </div>
     </div>
-  </div>
+</script>
+<script type="text/ng-template" id="loginContent.html">
+    <div class="modal-header">
+      LOGIN
+    </div>
+    <div class="modal-body" id="modal-body">
+        <div>
+            <form>
+                <div class="form-group">
+                    <label for="yourName">EMAIL</label>
+                    <input type="text" class="form-control" id="yourName" ng-model="user.email" />
+                </div>
+                <div class="form-group">
+                    <label for="yourEmail">PASSWORD</label>
+                    <input type="email" class="form-control" id="yourEmail" ng-model="user.password" />
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+              <input type="checkbox" class="form-check-input"> REMEMBER ME
+            </label>
+                    </div>
+                </div>
+                <div class="center">
+                    <button class="btn" type="button" ng-click="ok()">LOGIN</button>
+                    <button class="btn btn-link" type="button" ng-click="cancel()">FORGOT PASSWORD</button>
+                </div>
+            </form>
+        </div>
 </div>
-</section>
-<div class="clearfix">...</div>
-<footer>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <img src="images/footer-logo.png" class="center-block" />
-    </div>
-    <div class="col-md-12 center">
-        <div class="center-block">@ Copyright 2017 Device Technologies</div>
-    </div>
-  </div>
+</script>
+
 </div>
-</footer>

@@ -91,6 +91,33 @@
   float: right;
   right: 88px;
 }
-.right.carousel-control, .left.carousel-control {
+.msg-founder .right.carousel-control, .msg-founder .left.carousel-control {
     display: none;
+}
+.msg-founder .carousel-indicators{
+  bottom: -20px;
+}
+
+.msg-founder .carousel-indicators li{
+  border: 3px solid  #dddddd !important;
+  width: 15px;
+  height: 15px;
+}
+.msg-founder .carousel-indicators li.active{
+  border: 3px solid #b825ab !important;
+  background: #b825ab;
+  width: 15px;
+  height: 15px;
+}
+
+.footer-logo{
+  background: #f7f7f7;
+  padding: 20px;
+
+}
+.footer-copyright{
+  background: #e3e3e3;
+  padding: 10px;
+  color: #525252;
+  text-align: center;
 }

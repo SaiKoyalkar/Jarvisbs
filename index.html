@@ -10,7 +10,6 @@
 	<script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
 	<script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
 	<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
-	<script src="js/directives/dragEvents.js"></script>
 </head>
 
 <body class="ng-cloak main">
@@ -25,8 +24,26 @@
 		</footer> -->
 	</div>
 	</div>
+	<footer class="footer">
+
+	    <div class="center footer-logo">
+	      <img src="images/footer-logo.png" class="center-block" />
+	    </div>
+	    <div class="center footer-copyright">
+	        @ Copyright 2017 Device Technologies
+	    </div>
+	</footer>
+	<!-- App Module -->
 	<script src="app.js"></script>
+
+	<!-- Directives -->
+	<script src="js/directives/dragEvents.js"></script>
+
+
+	<!-- Controllers -->
 	<script src="js/controllers/home-ctrl.js"></script>
-	<script src="js/services/details-service.js"></script>
+	<script src="js/controllers/modal-ctrl.js"></script>
+
+
 </body>
 </html>
