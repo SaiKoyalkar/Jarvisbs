@@ -17,7 +17,7 @@
     <section class="container">
         <div class="row">
             <div class="about-products pull-left about-dts">
-                <h2 class="color-pink">About DTS Products</h2>
+                <h2>About DTS Products</h2>
                 <div class="desc">
                     Lorem Sai ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     dolor in reprehenderit in voluptate
@@ -29,7 +29,7 @@
         </div>
 
         <div class="about-products about-ats">
-            <h2 class="color-pink">About ATS Products</h2>
+            <h2>About ATS Products</h2>
             <div class="desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate
@@ -45,7 +45,7 @@
 
     <section class="container section-border">
         <div class="row">
-            <h2 class="center color-pink">BRANDS</h2>
+            <h2 class="text-center">BRANDS</h2>
             <div class="col-md-3">
                 <img src="images/B1.png" />
             </div>
@@ -82,7 +82,7 @@
                 </div>
             </div>
             <div class="col-md-8">
-                <h2>Message from our founder</h2>
+                <h2 class="color-gray">Message from our founder</h2>
                 <div class="msg-founder">
                     <p>"We understand that ongoing training and support is vital ensure accurate and up to date product knowledge. As part of our commitment to providing outstanding customer service, we have a dedicated staff, with skill ranging from sales,
                         marketing and nursing to professional educators who will be available to train clinic as needed."</p>
@@ -94,11 +94,11 @@
     </section>
 
     <script type="text/ng-template" id="registerContent.html">
-        <div class="modal-header center">
-          REGISTER
-        </div>
         <div class="modal-body" id="modal-body">
-
+          <button type="button" class="close" ng-click="cancel()">&times;</button>
+          <h1 class="text-center color-gray">
+         REGISTER
+       </h1>
             <form>
                 <div class="row">
                     <div class="col-md-6">
@@ -129,22 +129,25 @@
                     </div>
                 </div>
 
-                <div class="modal-footer">
-                    <div class="col-md-12 center">
-                        <button class="btn" type="button" ng-click="ok()">SIGN UP</button>
+                <div class="text-center">
+                    <div>
+                      <button class="btn btn-primary" type="button" ng-click="ok()">SIGN UP</button>
                     </div>
-                    <label>ALREADY HAVE AN ACCOUNT?
-                    <button class="btn btn-link" type="button" ng-click="cancel()">LOGIN</button>
-                </div>
+                    <div>
+                      <label class="text-primary">ALREADY HAVE AN ACCOUNT?<button class="btn btn-link" type="button" ng-click="cancel()">LOGIN</button>
+                    </div>
+              </div>
             </form>
         </div>
     </div>
 </script>
 <script type="text/ng-template" id="loginContent.html">
-    <div class="modal-header">
-      LOGIN
-    </div>
     <div class="modal-body" id="modal-body">
+      <button type="button" class="close" ng-click="cancel()">&times;</button>
+      <h1 class="text-center color-gray">
+      LOGIN
+      </h1>
+
         <div>
             <form>
                 <div class="form-group">
@@ -162,13 +165,16 @@
             </label>
                     </div>
                 </div>
-                <div class="center">
-                    <button class="btn" type="button" ng-click="ok()">LOGIN</button>
+                <div class="text-center">
+                  <div>
+                    <button class="btn btn-primary" type="button" ng-click="ok()">LOGIN</button>
+                  </div>
+                      <div>
                     <button class="btn btn-link" type="button" ng-click="cancel()">FORGOT PASSWORD</button>
                 </div>
+              </div>
             </form>
         </div>
 </div>
 </script>
-
 </div>

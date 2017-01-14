@@ -6,6 +6,13 @@
   height: 585px;
   margin-bottom: 130px;
   text-align: center;
+  color: #fff;
+}
+
+.anonymous-h2{
+  color: #fff;
+  border-bottom: 1px solid #bd28b8;
+  width: 750px;
 }
 
 .logo{
@@ -65,10 +72,8 @@
   background: #f7f7f7;
   margin-top: -65px;
 }
-.color-pink{
-  color: #bd28b8;
-  margin-bottom: 30px;
-   text-align: center;
+.color-gray{
+  color: #000;
 }
 
 .section-border{
@@ -99,13 +104,10 @@
 }
 
 .msg-founder .carousel-indicators li{
-  border: 3px solid  #dddddd !important;
   width: 15px;
   height: 15px;
 }
 .msg-founder .carousel-indicators li.active{
-  border: 3px solid #b825ab !important;
-  background: #b825ab;
   width: 15px;
   height: 15px;
 }

@@ -20,7 +20,7 @@ app.controller("home", function($scope, $uibModal) {
             ariaDescribedBy: 'modal-body',
             templateUrl: 'registerContent.html',
             controller: 'modal-ctrl',
-            size: 'sm'
+            size: 'md'
         });
         modalInstance.result.then(function() {
         }, function() {});
