@@ -16,10 +16,10 @@
 }
 
 .logo{
-  background: url(../images/logo.png);
   width: 75px;
   height: 82px;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .device-community{
@@ -101,6 +101,8 @@
 }
 .msg-founder .carousel-indicators{
   bottom: -20px;
+  left: 215px;
+  margin-bottom: 10px;
 }
 
 .msg-founder .carousel-indicators li{
@@ -111,6 +113,11 @@
   width: 15px;
   height: 15px;
 }
+
+.msg-founder .msg-founder-desc{
+  margin-top: 30px;
+}
+
 
 .footer-logo{
   background: #f7f7f7;
