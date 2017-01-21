@@ -1,132 +1,17 @@
-.main{
-  margin-top: -20px !important;
-}
-.anonymous-home-header{
-  background: url(../images/header-bg.png);
-  height: 585px;
-  margin-bottom: 130px;
-  text-align: center;
-  color: #fff;
+
+.logo img{
+  width: 80px;
+  margin: 10px 10px 10px 0;
 }
 
-.anonymous-h2{
-  color: #fff;
-  border-bottom: 1px solid #bd28b8;
-  width: 50%;
+.seperator{
+  border-right: 1px solid #ccc;
 }
-
-.logo{
-  width: 75px;
-  height: 82px;
-  margin-top: 50px;
-  cursor: pointer;
+.set-padding-lr{
+  padding-left: 40px;
+  padding-right: 40px;
 }
-
-.device-community{
-  margin-top: 55px;
-  margin-left: 170px;
-  text-align: left;
-  color: #fff;
-}
-
-.login-section{
-  float: right;
-  right: 224px;
-  width: 270px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.login-section .login-btn{
-  width: 240px;
-  margin: 10px auto;
-  color: #fff !important;
-  border: 2px solid #bebcc4;
-  border-radius: 25px;
-  padding: 15px;
-  text-align: center;
-  background: rgba(149, 145, 150, 0.5);
-}
-
-.login-section .register-btn{
-  color: #fff !important;
-  margin: 10px auto;
-  border: 2px solid #bebcc4;
-  border-radius: 20px;
-  padding: 10px;
-  text-align: center;
-  width: 175px;
-  background: rgba(149, 145, 150, 0.5);
-}
-
-.login-section .forgot-btn{
-  color: #fff;
-}
-
-.about-dts, .about-ats{
-  position: absolute;
-  display: inline-block;
-  width: 43%;
-  min-height: 400px;
-  padding: 85px;
-  background: #f7f7f7;
-  margin-top: -65px;
-}
-.color-gray{
-  color: #000;
-}
-
-.section-border{
-  border-bottom: 1px solid #e3e3e3;
-  border-top: 1px solid #e3e3e3;
-  margin: 50px auto;
-}
-
-
-.about-dts-products-img{
-  margin-right: 100px;
-}
-
-
-.about-ats-products-img{
-  margin-top: 65px;
-}
-
-.about-ats{
-  float: right;
-  right: 88px;
-}
-.msg-founder .right.carousel-control, .msg-founder .left.carousel-control {
-    display: none;
-}
-.msg-founder .carousel-indicators{
-  bottom: -20px;
-  left: 215px;
-  margin-bottom: 10px;
-}
-
-.msg-founder .carousel-indicators li{
-  width: 15px;
-  height: 15px;
-}
-.msg-founder .carousel-indicators li.active{
-  width: 15px;
-  height: 15px;
-}
-
-.msg-founder .msg-founder-desc{
-  margin-top: 30px;
-}
-
-
-.footer-logo{
-  background: #f7f7f7;
-  padding: 20px;
-
-}
-.footer-copyright{
-  background: #e3e3e3;
-  padding: 10px;
-  color: #525252;
-  text-align: center;
+.set-padding-tb{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }

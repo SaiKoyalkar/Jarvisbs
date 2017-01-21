@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="app" lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="css/bootstrap.css" />
@@ -13,7 +16,42 @@
 </head>
 
 <body class="ng-cloak main">
-	<div class="container-fluid">
+
+
+	    <!-- Fixed navbar -->
+	    <nav class="navbar navbar-default navbar-fixed-top" ng-controller="header">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="logo" href="#">
+							<img src="images/ast_logo_u38.png" />
+						</a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="#">BRANDS</a></li>
+	            <li><a href="#about">AST ACADEMY</a></li>
+	            <li><a href="#contact">ABOUT US</a></li>
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right">
+	            <li><a ng-click="openLoginRegister()">LOGIN</a></li>
+	            <li>
+								<span class="glyphicon"></span>
+							</li>
+							<li>
+								<span class="glyphicon"></span>
+							</li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </nav>
+
+	<div class="container">
 		<div class="row">
 
 		<div ui-view></div>
@@ -41,6 +79,7 @@
 
 
 	<!-- Controllers -->
+		<script src="js/controllers/header-ctrl.js"></script>
 	<script src="js/controllers/home-ctrl.js"></script>
 	<script src="js/controllers/modal-ctrl.js"></script>
 
