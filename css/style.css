@@ -15,3 +15,14 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.jumbotron{
+  padding-top: 100px;
+  min-height: 500px;
+}
+.footer .logo{
+  margin: 20px auto;
+  width: 200px !important;
+
+
+}
