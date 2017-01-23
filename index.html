@@ -16,8 +16,6 @@
 </head>
 
 <body class="ng-cloak main">
-
-
 	    <!-- Fixed navbar -->
 	    <nav class="navbar navbar-default navbar-fixed-top" ng-controller="header">
 	      <div class="container">
@@ -34,17 +32,96 @@
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
-	            <li><a href="#">BRANDS</a></li>
-	            <li><a href="#about">AST ACADEMY</a></li>
-	            <li><a href="#contact">ABOUT US</a></li>
+	            <li uib-dropdown ng-mouseover="openMenu($event, 'brands')" is-open="status.brands">
+								<a uib-dropdown-toggle>BRANDS</a>
+								<div class="dropdown-menu brands-dropdown" uib-dropdown-menu aria-labelledby="Brands">
+									<div class="col-md-4">
+										<ul>
+											<li>safsda</li>
+											<li>safsda</li>
+										</ul>
+									</div>
+									<div class="col-md-8">
+										<div class="jumbotron">
+												<h2 class="text-center">Place holder</h2>
+											</div>
+									</div>
+								</div>
+							</li>
+							<li ng-if="secureUser" class="dropdown" uib-dropdown ng-mouseover="openMenu($event, 'marketing')" is-open="status.marketing">
+								<a uib-dropdown-toggle>MARKETING</a>
+								<div class="dropdown-menu marketing-dropdown" uib-dropdown-menu aria-labelledby="Marketing">
+									<div class="col-md-4">
+										<ul>
+											<li>safsda</li>
+											<li>safsda</li>
+										</ul>
+									</div>
+									<div class="col-md-8">
+										<div class="jumbotron">
+												<h2 class="text-center">Place holder</h2>
+											</div>
+									</div>
+								</div>
+							</li>
+	            <li uib-dropdown ng-mouseover="openMenu($event, 'atsAcademy')" is-open="status.atsAcademy">
+								<a uib-dropdown-toggle>AST ACADEMY</a>
+								<div class="dropdown-menu ats-academy-dropdown" uib-dropdown-menu aria-labelledby="ATS Academy">
+									<div class="col-md-4">
+										<ul>
+											<li>safsda</li>
+											<li>safsda</li>
+										</ul>
+									</div>
+									<div class="col-md-8">
+										<div class="jumbotron">
+												<h2 class="text-center">Place holder</h2>
+											</div>
+									</div>
+								</div>
+							</li>
+	            <li uib-dropdown ng-mouseover="openMenu($event, 'aboutUs')" is-open="status.aboutUs">
+								<a uib-dropdown-toggle>ABOUT US</a>
+								<div class="dropdown-menu about-us-dropdown" uib-dropdown-menu aria-labelledby="About Us">
+									<div class="col-md-4">
+										<ul>
+											<li>safsda</li>
+											<li>safsda</li>
+										</ul>
+									</div>
+									<div class="col-md-8">
+										<div class="jumbotron">
+												<h2 class="text-center">Place holder</h2>
+											</div>
+									</div>
+								</div>
+
+							</li>
 	          </ul>
 	          <ul class="nav navbar-nav navbar-right">
-	            <li><a ng-click="openLoginRegister()">LOGIN</a></li>
-	            <li>
-								<span class="glyphicons search"></span>
+	            <li ng-if="!secureUser"><a ng-click="openLoginRegister()">LOGIN</a></li>
+							<li ng-if="secureUser" uib-dropdown ng-mouseover="openMenu($event, 'user')" is-open="status.user">
+								<a uib-dropdown-toggle>Welcome, {{user.name}}</a>
+								<div class="dropdown-menu user-dropdown" uib-dropdown-menu aria-labelledby="User">
+										sadfasdfsad
+										asdfjasdfjlj <br /><br />
+								</div>
 							</li>
-							<li>
-								<span class="glyphicons shop"></span>
+							<li uib-dropdown ng-mouseover="openMenu($event, 'search')" is-open="status.search">
+								<a class="glyphicon glyphicon-search"></a>
+								<div class="dropdown-menu search-dropdown" uib-dropdown-menu aria-labelledby="Search">
+										sadfasdfsad
+										asdfjasdfjlj <br /><br />
+								</div>
+
+							</li>
+							<li uib-dropdown ng-mouseover="openMenu($event, 'products')" is-open="status.products">
+								<a uib-dropdown-toggle class="glyphicon glyphicon-briefcase"></a>
+								<div class="dropdown-menu products-dropdown" uib-dropdown-menu aria-labelledby="Products">
+										sadfasdfsad
+										asdfjasdfjlj <br /><br />
+								</div>
+
 							</li>
 	          </ul>
 	        </div><!--/.nav-collapse -->
@@ -66,12 +143,12 @@
 	    <div class="footer">
 	      <img src="images/ast_main_logo_u32.jpg" class="logo center-block" />
 	    </div>
-			<div class="center">
-				<ul class="inline">
+			<div>
+				<ul class="list-inline text-center">
 					<li><a href="">CONTACT US</a></li>
 					<li><a href="">TERMS OF USE</a></li>
 					<li><a href="">PRIVACY POLICY</a></li>
-										<li><a href="">CLINIC LOGIN</a></li>
+					<li><a href="">CLINIC LOGIN</a></li>
 				</ul>
 			</div>
 	    <div class="text-center">

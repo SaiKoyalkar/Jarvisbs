@@ -1,4 +1,3 @@
-
 .logo img{
   width: 80px;
   margin: 10px 10px 10px 0;
@@ -16,13 +15,46 @@
   padding-bottom: 30px;
 }
 
-.jumbotron{
+.home .jumbotron{
   padding-top: 100px;
   min-height: 500px;
 }
 .footer .logo{
   margin: 20px auto;
   width: 200px !important;
+}
+.brand-logo{
+  left: 45%;
+  position: absolute;
+  bottom: -10px;
+  margin: auto;
+  height: 100px;
+  width: 115px;
+  background: url(../images/plane-logo.png) no-repeat;
+}
 
+.brands-dropdown, .marketing-dropdown, .ats-academy-dropdown, .about-us-dropdown, .user-dropdown, .search-dropdown, .products-dropdown{
+  width: 100% !important;
+  min-width: 1172px;
+  padding: 15px;
+  min-height: 300px;
+}
 
+.brands-dropdown{
+margin-left: -107px;
+}
+.marketing-dropdown{
+margin-left: -192px;
+}
+.ats-academy-dropdown{
+margin-left: -305px;
+}
+.about-us-dropdown{
+margin-left: -435px;
+}
+.user-dropdown{
+margin-right: -90px;
+}
+.search-dropdown{
+margin-right: -45px;
 }

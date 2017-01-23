@@ -1,5 +1,17 @@
 'use strict'
 app.controller("header", function($scope, $uibModal) {
+
+  $scope.secureUser = true;
+  $scope.status = {
+    brands: false,
+    marketing: false,
+    atsAcademy: false,
+    aboutUs: false,
+    user:false,
+    search: false,
+    products: false
+ };
+
     $scope.openLoginRegister = function() {
         var modalInstance = $uibModal.open({
             animation: true,
@@ -10,6 +22,19 @@ app.controller("header", function($scope, $uibModal) {
             size: 'lg'
         });
         modalInstance.result.then(function() {
+          $scope.user.loign = true;
         }, function() {});
     };
+    $scope.openMenu=function(eve, menu){
+      $scope.status.brands = false;
+      $scope.status.marketing = false;
+      $scope.status.atsAcademy = false;
+      $scope.status.aboutUs = false;
+      $scope.status.user = false;
+      $scope.status.search = false;
+      $scope.status.products = false;
+
+      $scope.status[menu]= true;
+
+    }
 });
