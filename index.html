@@ -36,7 +36,7 @@
 								<a uib-dropdown-toggle>BRANDS</a>
 								<div class="dropdown-menu brands-dropdown" uib-dropdown-menu aria-labelledby="Brands">
 									<div class="col-md-4">
-										<ul>
+										<ul class="list">
 											<li><a href="">Aspect</a></li>
 											<li><a href="">Aspect Dr</a></li>
 											<li><a href="">Aspect Gold</a></li>
@@ -45,7 +45,7 @@
 									</div>
 									<div class="col-md-8">
 										<div class="jumbotron">
-												<h2 class="text-center">Place holder</h2>
+												<!-- <img src="images/Title-Place-Holder.png" class="img-responsive" /> -->
 											</div>
 									</div>
 								</div>
@@ -54,7 +54,7 @@
 								<a uib-dropdown-toggle>MARKETING</a>
 								<div class="dropdown-menu marketing-dropdown" uib-dropdown-menu aria-labelledby="Marketing">
 									<div class="col-md-4">
-										<ul>
+										<ul class="list">
 											<li><a href="">Print Collateral</a></li>
 											<li><a href="">Digital Collateral</a></li>
 											<li><a href="">Frames</a></li>
@@ -63,7 +63,7 @@
 									</div>
 									<div class="col-md-8">
 										<div class="jumbotron">
-												<h2 class="text-center">Place holder</h2>
+												<img src="images/Place-Holder.png" class="img-responsive" />
 											</div>
 									</div>
 								</div>
@@ -80,6 +80,7 @@
 									<div class="col-md-8">
 										<div class="jumbotron">
 												<h2 class="text-center">Place holder</h2>
+												 <img src="images/Title-Place-Holder.png" class="img-responsive" />
 											</div>
 									</div>
 								</div>
@@ -115,17 +116,76 @@
 							<li uib-dropdown ng-mouseover="openMenu($event, 'search')" is-open="status.search">
 								<a class="glyphicon glyphicon-search"></a>
 								<div class="dropdown-menu search-dropdown" uib-dropdown-menu aria-labelledby="Search">
-										sadfasdfsad
-										asdfjasdfjlj <br /><br />
+								
+<div class="col-md-2"></div>
+
+               <div class="form-group col-md-8">
+                   <input type="search" class="form-control center-block" id="search" ng-model="search">
+               </div>
+<div class="col-md-2"></div>
+
 								</div>
 
 							</li>
 							<li uib-dropdown ng-mouseover="openMenu($event, 'products')" is-open="status.products">
 								<a uib-dropdown-toggle class="glyphicon glyphicon-briefcase"></a>
-								<div class="dropdown-menu products-dropdown" uib-dropdown-menu aria-labelledby="Products">
-										sadfasdfsad
-										asdfjasdfjlj <br /><br />
-								</div>
+								
+									<ul class="dropdown-menu dropdown-menu products-dropdown" uib-dropdown-menu role="menu" aria-labelledby="Products">
+        <li role="menuitem" >
+        	<h2 class="px-10">Your Cart <span class="pull-right">X<span>
+        </li>
+        <li class="divider"></li>
+        <li role="menuitem">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-7">
+        	<div>Brand Name</div>
+        	<div>Product Name</div>
+        	<div>Size: xxx</div>
+        	<div>
+        		<div class="col-md-6">1</div>
+        		<div class="col-md-6">$PRICE</div>
+        	</div>
+
+</div>
+
+        </li>
+        <li role="menuitem">
+        	
+        	        <li class="divider"></li>
+        <li role="menuitem">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-7">
+        	<div>Brand Name</div>
+        	<div>Product Name</div>
+        	<div>Size: xxx</div>
+        	<div>
+        		<div class="col-md-6">1</div>
+        		<div class="col-md-6">$PRICE</div>
+        	</div>
+
+</div>
+
+        </li>
+        
+        <li role="menuitem">        <li class="divider"></li>
+        <li role="menuitem">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-7">
+        	<div>Brand Name</div>
+        	<div>Product Name</div>
+        	<div>Size: xxx</div>
+        	<div>
+        		<div class="col-md-6">1</div>
+        		<div class="col-md-6">$PRICE</div>
+        	</div>
+
+</div>
+</li>
+      </ul>
+								
 
 							</li>
 	          </ul>

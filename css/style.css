@@ -33,7 +33,7 @@
   background: url(../images/plane-logo.png) no-repeat;
 }
 
-.brands-dropdown, .marketing-dropdown, .ats-academy-dropdown, .about-us-dropdown, .user-dropdown, .search-dropdown, .products-dropdown{
+.brands-dropdown, .marketing-dropdown, .ats-academy-dropdown, .about-us-dropdown, .user-dropdown, .search-dropdown{
   width: 100% !important;
   min-width: 1172px;
   padding: 15px;
@@ -53,8 +53,13 @@ margin-left: -305px;
 margin-left: -435px;
 }
 .user-dropdown{
-margin-right: -90px;
+margin-right:90px;
 }
 .search-dropdown{
 margin-right: -45px;
+min-height: 200px !important;
+}
+
+.products-dropdown{
+  min-width: 400px;
 }

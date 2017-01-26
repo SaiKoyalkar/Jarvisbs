@@ -22,7 +22,9 @@ app.controller("header", function($scope, $uibModal) {
             size: 'lg'
         });
         modalInstance.result.then(function() {
-          $scope.user.loign = true;
+          $scope.secureUser = true;
+          $state.go('secureUser');
+          $uibModalInstance.close();
         }, function() {});
     };
     $scope.openMenu=function(eve, menu){

@@ -11,4 +11,9 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
             url: "/home",
             templateUrl: "views/home.html"
         })
+        .state('secureHome', {
+            url: "/secureHome",
+            templateUrl: "views/secureHome.html"
+        })
+
 });
