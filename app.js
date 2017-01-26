@@ -15,5 +15,4 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
             url: "/secureHome",
             templateUrl: "views/secureHome.html"
         })
-
 });
